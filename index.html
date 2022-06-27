@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Sega Games Tribute Page</title>
+  </head>
+  <header>
+    <div id="header-block">
+      <p class="date-text">The date today is <span class="date"></span></p>
+      <img
+        class="Logo"
+        src="https://logos-download.com/wp-content/uploads/2019/11/Sega_Logo_1.png"
+      />
+      <h3 id="page-name">Games Tribute Page</h3>
+      <h6 id="page-description">For all your nostalgic gaming needs</h6>
+    </div>
+  </header>
+  <body>
+    <main id="main">
+      <div id="tribute-info">
+        <h1 id="title">STREETS <br />OF RAGE<br /></h1>
+        <ul id="game-info">
+          <label id="release">Release Date:</label>
+          <li id="release-date">1991</li>
+          <label id="publisher">Publisher:</label>
+          <li id="publisher-name">Sega</li>
+          <label id="developer">Developer:</label>
+          <li id="developer-name">Sega</li>
+          <label id="genre">Genre:</label>
+          <li id="genre-type">Beat 'em-up</li>
+        </ul>
+        <p id="description">
+          Streets of Rage is a series of side-scrolling beat 'em up video games,
+          centering on the efforts of several ex-police vigilantes trying to rid
+          a fictional, large American city from a crime syndicate that has
+          corrupted its local government.
+        </p>
+      </div>
+      <img
+        id="img1"
+        src="https://tcrf.net/images/f/f0/Gensor-title.png"
+        alt="Title Screen"
+      />
+      <p id="description2">
+        Originally released on the Genesis in 1991, Streets of Rage was Sega's
+        response to the still-burgeoning popularity of side-scrolling
+        arcade-style beat-'em-ups. Capcom's Final Fight was the game to emulate
+        at the time. In a lot of ways, Streets of Rage felt like little more
+        than a Final Fight also-ran, right down to its three playable characters
+        and comic-book-gritty urban setting.
+      </p>
+      <figure>
+        <img
+          id="img2"
+          src="https://www.retrogames.cz/games/389/Genesis_01.gif"
+          alt="Gameplay Screenshot 1"
+        />
+        <figcaption id="caption">
+          <i>Use whatever means neccesary to take out the bad guys...</i>
+        </figcaption>
+      </figure>
+      <p id="description3">
+        In Streets of Rage, you play as one of three ex-cops--Alex Hunter, Axel
+        Stone, or Blaze Fielding, who are determined to clean up the apparently
+        rage-filled streets of their fare city. As was the fashion of the time,
+        they'll exact their brand of vigilante justice by walking to the right
+        and brutalizing anyone that crosses their path. The three characters
+        feel ever-so-slightly different, though the basic controls are the same,
+        giving you a jump button and a single attack button, which, depending on
+        the context, can be used to dish out a few different types of attack
+        combos. You can also walk up to an enemy and automatically grapple them,
+        and from there you can pull off moves like shoulder throws and suplexes.
+        Enemies can also grapple you, though it's easy to get out of, and if you
+        do end up getting thrown, a well-timed tap of the jump button will have
+        you landing on your feet like some kind of bare-knuckle cat. There's
+        also a cooperative angle to the grappling in the two-player game, as
+        players can toss each other at enemies as a high-powered ranged attack.
+      </p>
+      <figure>
+        <img
+          id="img3"
+          src="https://c.tenor.com/eCU8zjn_rDQAAAAd/streets-of-rage-sor.gif"
+          alt="Gameplay Screenshot 2"
+        />
+        <figcaption id="caption">
+          <i>...or just throw them off the map</i>
+        </figcaption>
+      </figure>
+      <p id="description4">
+        You can also call in for backup, which comes in the form of some heavy
+        artillery launched by a sleek-looking police cruiser sitting several
+        screens away. It's great for dealing with large crowds and especially
+        obnoxious bosses, and it's one of those things that defines Streets of
+        Rage. Also, accidentally calling in for backup at the very start of the
+        game, assuming that the button you're pressing will produce an attack or
+        a jump, is truly one of those hallmark Streets of Rage moments. The
+        novelty of the police backup and the grappling business help stave off
+        some of the monotony inherent to most beat-'em-ups, if at least for a
+        little while. Still, for what it is, Streets of Rage is a pretty well
+        made beat-'em-up. It's not a bad-looking game, with plenty of changes of
+        scenery, parallax-scrolling backgrounds, and good-for-their-time
+        animations, though it's hard not to be bothered by the pervasive
+        pallete-swaps you'll see in the enemies you'll face. Really, the saving
+        grace for Streets of Rage is the music, which is varied and catchy, and
+        it makes good use of the Genesis' sound synthesizer. This was really
+        some of the best music to be heard on the Genesis at its time, and the
+        actual compositions stand up rather well. It's not quite as catchy or
+        intricate as what would end up appearing in Streets of Rage 2, but for
+        some folks, the music will be worth the price of admission here.
+      </p>
+      <figure>
+        <img
+          id="img4"
+          src="https://i0.wp.com/www.the-pixels.com/wp-content/uploads/2017/06/streets-of-rage-1-02.png?resize=640%2C480&ssl=1"
+          alt="Gameplay Screenshot 3"
+        />
+        <figcaption id="caption">
+          <i>As a last resort you can always call for back up</i>
+        </figcaption>
+      </figure>
+      <h1 id="Where">Where can I play it?</h1>
+      <p id="Here">You can play the game by clicking the button below.</p>
+      <button id="play" type="link">
+        <a
+          href="https://www.ssega.com/play/streets-of-rage/1606"
+          target="_blank"
+        >
+          Play it now!</a
+        >
+      </button>
+    </main>
+    <script>
+      let today = new Date().toLocaleDateString("en-us", {
+        weekday: "long",
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
+      const date = document.querySelector(".date");
+      date.textContent = today;
+    </script>
+  </body>
+  <footer>
+    <p id="disclaimer">
+      This website displays various trademarks and copy-written content such as
+      videogame logos, company logos, videogame names and company names. These
+      different trademarks and copy-written content do not belong to us and are
+      properties of their respective owners. This website is in no way
+      affiliated with said companies or trademarks. This website’s only
+      intention is to spread the word and endorse the content displayed.
+    </p>
+  </footer>
+</html>
