@@ -23,12 +23,7 @@
 }
 
 .container {
-  max-width: 50%;
-  margin: auto;
-}
-
-main {
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -65,25 +60,26 @@ h6 {
   list-style: none;
 }
 
-#description,
-#description3,
-#description4 {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 0 40px 0 40px;
-}
-
 #description {
   font-weight: 700;
   margin-top: 20px;
+  padding: 30px;
 }
 
 #description2 {
-  display: flex;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0 40px 0 40px;
+  margin: auto;
+  padding: 30px 40px;
+  max-width: 70%;
+}
+
+#description3,
+#description4 {
+  text-align: center;
+  margin: auto;
+  padding: 0px 40px;
+  padding-bottom: 30px;
+  max-width: 70%;
 }
 
 label {
@@ -140,4 +136,6 @@ a:active {
 #disclaimer {
   font-size: 10px;
   padding-bottom: 20px;
+  margin: auto;
+  max-width: 70%;
 }
